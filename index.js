@@ -6,3 +6,11 @@ function saturdayFun(something = "roller-skate") {
 function mondayWork(something = "go to the office") {
   return "This Monday, I will " + something + ".";
 }
+
+function wrapAdjective {
+  return function(very = "*") {
+    return function(something = "special") {
+      return "You are " + very + something + very + "!";
+    }
+  }
+}
